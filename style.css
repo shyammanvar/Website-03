@@ -1,0 +1,719 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.A {
+    z-index: 1000;
+}
+
+.navbar {
+    text-align: center;
+    background: url(Layer\ 15.png) no-repeat center;
+    background-size: cover;
+    z-index: 1000;
+    background-image: linear-gradient(1deg, #fbe389 -100%, #f48b82 38%);
+}
+
+.nav-link {
+    position: relative;
+    transition: all 0.8s;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: yellow;
+}
+
+.nav-link::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: yellow;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all 0.5s;
+    pointer-events: none;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+    opacity: 1;
+    color: yellow;
+}
+
+
+.btn {
+    transition: all 0.9s;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border: 3px solid white;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.A1 {
+    background: url(Layer\ 15.png) no-repeat center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.A1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(0deg, #fbe389 0%, #f48b82 100%);
+    opacity: 0.9;
+}
+
+
+.eagle {
+    padding: 100px 0;
+
+}
+
+.eagle h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 4.5rem;
+    padding-bottom: 20px;
+}
+
+.eagle h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9.4rem;
+    line-height: 120px;
+    letter-spacing: 1px;
+}
+
+.nav-item {
+    font-size: 0.875rem;
+}
+
+@media (max-width:2550px) {
+    .fixtesti {
+        padding: 20px 170px 10px;
+    }
+
+    .iphone-ipad {
+        position: relative;
+        top: 92px;
+    }
+}
+
+@media (max-width:1024px) {
+    .eagle {
+        padding: 80px 0;
+    }
+
+    .eagle h1 {
+        font-size: 4.5rem;
+        margin-bottom: 0;
+    }
+
+    .eagle h2 {
+        font-size: 9.4rem;
+        /* margin-bottom: -5px; */
+    }
+
+}
+
+@media (max-width:992px) {
+    .eagle {
+        padding: 80px 0;
+    }
+
+
+    .eagle h1 {
+        font-size: 3.9rem;
+        margin-bottom: 0;
+    }
+
+    .eagle h2 {
+        font-size: 7.9rem;
+        line-height: 90px;
+        /* margin-bottom: -5px; */
+    }
+
+    .fixtesti {
+        justify-content: center;
+        padding: 20px 150px 10px;
+    }
+
+    .testi-p {
+        margin-top: 15px;
+        text-align: justify;
+    }
+}
+
+@media (max-width:767px) {
+    .eagle {
+        padding: 80px 0 209px 0;
+    }
+
+    .eagle h1 {
+        font-size: 3.5rem;
+        padding-bottom: 20px;
+    }
+
+    .eagle h2 {
+        font-size: 6.0rem;
+        line-height: 80px;
+        /* margin-bottom: -5px; */
+    }
+
+    .progress p {
+        padding-top: 0;
+    }
+
+    .calander {
+        margin-top: 40px;
+    }
+
+    .fixtesti {
+        padding: 20px 100px 10px;
+    }
+
+    .iphone-ipad {
+        position: relative;
+        top: 74px;
+    }
+}
+
+
+@media (max-width: 575px) {
+    .eagle {
+        padding: 92px 0 227px 0;
+    }
+
+    .dhr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .first-btn button {
+        margin-top: 0px;
+        font-size: 0.875rem;
+        padding: 6px 6px;
+    }
+
+    .eagle h1 {
+        font-size: 3rem;
+        padding-bottom: 15px;
+    }
+
+    .eagle h2 {
+        font-size: 4.9rem;
+        line-height: 75px;
+    }
+
+    .fixtesti {
+        padding: 20px 100px 10px;
+    }
+
+    .iphone-ipad {
+        position: relative;
+        top: 79px;
+    }
+}
+
+@media (max-width:475px) {
+
+    .eagle {
+        padding: 65px 0 230px 0;
+    }
+
+    .accordion-body p {
+        font-size: 0.8125rem;
+    }
+
+    .eagle h1 {
+        font-size: 2.7rem;
+        margin-top: 25px;
+        margin-bottom: 0px;
+    }
+
+    .eagle h2 {
+        font-size: 4.4rem;
+        line-height: 65px;
+        /* margin-bottom: -5px; */
+    }
+
+    .first-btn button {
+        margin-top: 0px;
+        font-size: 13px;
+    }
+
+    .fixtesti {
+        padding: 20px 70px 10px;
+    }
+
+    .iphone-ipad {
+        position: relative;
+        top: 66px;
+    }
+
+}
+
+@media (max-width:425px) {
+    .eagle h1 {
+        font-size: 2.3rem;
+        margin-top: 25px;
+        margin-bottom: 0px;
+    }
+
+    .eagle h2 {
+        font-size: 3.3rem;
+        line-height: 50px;
+        /* margin-bottom: -5px; */
+    }
+
+    .fixtesti {
+        padding: 20px 48px 10px;
+        font-size: 0.875rem;
+    }
+
+    .iphone-ipad {
+        position: relative;
+        top: 52px;
+    }
+}
+
+
+@media (max-width:320px) {
+    .eagle h1 {
+        font-size: 2rem;
+        margin-top: 25px;
+        /* margin-bottom: 20px; */
+    }
+
+    .eagle h2 {
+        font-size: 2.8rem;
+        line-height: 36px;
+        /* margin-bottom: -5px; */
+    }
+
+    .fixtesti {
+        padding: 20px 45px 10px;
+        font-size: 0.875rem;
+    }
+
+    .iphone-ipad {
+        position: relative;
+        top: 44px;
+    }
+}
+
+@media (max-width:320px) {
+    .iphone-ipad {
+        position: relative;
+        top: 39px;
+    }
+}
+
+.A2 h3 {
+    font-family: 'Kaushan Script', cursive;
+}
+
+.A2 h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.A2 p {
+    font-family: 'Roboto', sans-serif;
+    color: #999999;
+}
+
+@media (max-width:575px) {
+    .box {
+        padding: 20px 0;
+    }
+
+}
+
+.icons p {
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.box:hover,
+.icons:hover {
+    background: url(Rectangle\ 6.png) no-repeat center;
+    background-size: cover;
+    opacity: 0.9;
+    box-shadow: 10px 10px #95e1d3;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+}
+
+.icons {
+    opacity: 0;
+}
+
+.A4 h4 {
+    font-family: 'Kaushan Script', cursive;
+}
+
+.A4 h5 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.A4 p {
+    color: #999999;
+}
+
+.alarm h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width:475px) {
+    .mar-top {
+        margin-top: 15px;
+    }
+
+    .mar-top p {
+        font-size: 15px;
+    }
+
+
+}
+
+.A5 {
+    background: url(Layer\ 45.png);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.A5::before {
+    content: "";
+    background-color: #d9d9d9;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0.7;
+}
+
+.A5 h3 {
+    font-family: 'Kaushan Script', cursive;
+}
+
+.A5 h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.A6 h4 {
+    font-family: 'Kaushan Script', cursive;
+}
+
+.A6 h5 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.A6 p {
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+}
+
+.design p {
+    color: black;
+}
+
+.accordion-button {
+    padding: 5px 15px;
+}
+
+.accordion-body {
+    text-align: justify;
+    font-size: 15px;
+    height: 180px;
+    overflow-y: scroll;
+    color: #999999;
+}
+
+#style-2::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    background-color: #F5F5F5;
+}
+
+#style-2::-webkit-scrollbar {
+    width: 9px;
+    background-color: #F5F5F5;
+}
+
+#style-2::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #95e1d3;
+}
+
+@media (max-width:575px) {
+    .mtps {
+        margin-top: 20px;
+    }
+}
+
+.A7 {
+    background-color: #f8f8f8;
+}
+
+
+.hrtag hr {
+    opacity: 0;
+}
+
+.hrtag p {
+    font-family: 'Kaushan Script', cursive;
+}
+
+.A8 h4 {
+    font-family: 'Kaushan Script', cursive;
+}
+
+.A8 h5 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.A8 p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.teams {
+    opacity: 0;
+}
+
+.team:hover,
+.teams:hover {
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    box-shadow: 10px 10px #95e1d3;
+    background-image: linear-gradient(0deg, #f1e390 0%, #ea8b89 100%);
+    opacity: 0.8;
+}
+
+.tname {
+    color: black;
+}
+
+.A9 {
+    background-color: #f8f8f8;
+}
+
+.A10 h4 {
+    font-family: 'Kaushan Script', cursive;
+}
+
+.A10 h5 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.A10 p {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.layicn {
+    opacity: 0;
+}
+
+
+.layer:hover,
+.layicn:hover {
+    cursor: pointer;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(0deg, #f1e390 0%, #ea8b89 100%);
+    opacity: 0.9;
+}
+
+.A12 {
+    background: url(Layer\ 53.png) no-repeat center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.A12::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #d9d9d9;
+    opacity: 0.9;
+}
+
+@media (max-width:475px) {
+    .wrap-p {
+        flex-wrap: wrap;
+    }
+
+    .wrap-p img {
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+
+}
+
+.people h5 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.people h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.people p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #999999;
+}
+
+.clint {
+    z-index: 1;
+}
+
+.clint h4 {
+    font-family: 'Kaushan Script', cursive;
+}
+
+.clint h5 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main_head h4 {
+    font-family: 'Kaushan Script', cursive;
+}
+
+.main_head h5 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dolor h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dolor p {
+    font-family: 'Roboto', sans-serif;
+    color: #999999;
+}
+
+.dolor span {
+    font-family: 'Roboto', sans-serif;
+    color: #999999;
+}
+
+.eye i,
+.eye img {
+    transition: all 0.8s;
+}
+
+.eye i:hover,
+.eye img:hover {
+    transform: scale(1.35);
+}
+
+.eyest img {
+    transition: all 0.8s;
+}
+
+.eyest img:hover {
+    transform: scale(1.1);
+}
+
+.images img {
+    transition: all 0.8s;
+    overflow: hidden;
+}
+
+.images img:hover {
+    transform: scale(1.15);
+}
+
+.imaging img {
+    transition: all 0.8s;
+    overflow: hidden;
+}
+
+.imaging img:hover {
+    transform: scale(1.05);
+}
+
+
+.A14 {
+    background: url(Layer\ 59.png) no-repeat center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.A14::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #d9d9d9;
+    opacity: 0.6;
+}
+
+footer {
+    background-color: #f8f8f8;
+    height: 100%;
+    width: 100%;
+}
+
+.firstf h2 {
+    color: #cccccc;
+    font-weight: 700;
+}
+
+.firstf p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.follow {
+    color: black;
+}
+
+@media (max-width:475px) {
+    .loremsing {
+        font-size: 14px;
+    }
+
+}
